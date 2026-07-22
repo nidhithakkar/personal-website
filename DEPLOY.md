@@ -2,15 +2,25 @@
 
 ## 1. Push to GitHub
 
+Code is already committed on `main`. If `gh` needs a login:
+
 ```bash
-cd /Users/nidhithakkar/personal-website
-git remote add origin https://github.com/nidhithakkar/personal-website.git
-git add .
-git commit -m "Initial personal portfolio site"
-git push -u origin main
+gh auth login
 ```
 
-(Create an empty repo named `personal-website` on GitHub first if needed.)
+Then create the repo and push:
+
+```bash
+cd /Users/nidhithakkar/personal-website
+gh repo create personal-website --private --source=. --remote=origin --push
+```
+
+Or create an empty repo on GitHub, then:
+
+```bash
+git remote add origin https://github.com/nidhithakkar/personal-website.git
+git push -u origin main
+```
 
 ## 2. Deploy on Vercel
 
