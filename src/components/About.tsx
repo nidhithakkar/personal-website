@@ -20,23 +20,24 @@ export default function About() {
             About
           </p>
           <h2 className="font-display mt-3 text-3xl font-bold tracking-tight text-white sm:text-4xl md:text-5xl">
-            I build things that ship.
+            Builder. Engineer. Quality first.
           </h2>
           <div className="mt-8 space-y-5 text-base leading-relaxed text-muted sm:text-lg">
             <p>
-              I&apos;m Nidhi — a builder and engineer who cares about the full
-              loop: clear problem, solid systems, and products people actually
-              use.
+              I&apos;m Nidhi — a builder and engineer who cares as much about
+              how something holds up as whether it ships. Clear problem, solid
+              systems, honest signal, and products people can trust.
             </p>
             <p>
-              My background spans quality engineering and product building at
-              places like Amazon and Snap, and I&apos;m currently a founding
-              engineer helping grow AI-powered products from the ground up. I
-              like owning outcomes end to end — from idea to release.
+              My background is rooted in quality engineering at places like
+              Amazon and Snap — automation, release confidence, and catching
+              what matters before users do. I&apos;m currently a founding
+              engineer helping grow AI-powered products from the ground up,
+              still with that same bias toward reliability and craft.
             </p>
             <p>
-              Outside of day jobs, I ship side projects and client work —
-              websites and tools that solve real problems for real people.
+              Outside of work, I build side projects just for fun — small
+              experiments and tools I want to exist.
             </p>
           </div>
         </motion.div>

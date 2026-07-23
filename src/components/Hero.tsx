@@ -65,23 +65,25 @@ export default function Hero() {
           </motion.h1>
         </div>
 
-        {/* Portrait */}
+        {/* Portrait — transparent cutout fades into burgundy */}
         <motion.div
           initial={{ opacity: 0, scale: 0.96 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.35, duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
-          className="relative z-10 mx-auto mt-16 w-full max-w-[280px] sm:mt-20 sm:max-w-[340px] md:mt-24 md:max-w-[400px] lg:max-w-[440px]"
+          className="relative z-10 mx-auto mt-16 w-full max-w-[300px] sm:mt-20 sm:max-w-[360px] md:mt-24 md:max-w-[420px] lg:max-w-[460px]"
         >
-          <div className="portrait-mask relative aspect-[3/4] w-full">
-            <Image
-              src="/nidhi.png"
-              alt="Nidhi Thakkar"
-              fill
-              priority
-              className="object-cover object-[50%_15%]"
-              sizes="(max-width: 768px) 280px, 440px"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-40" />
+          <div className="relative aspect-[3/4] w-full">
+            <div className="portrait-mask absolute inset-0">
+              <Image
+                src="/nidhi.png"
+                alt="Nidhi Thakkar"
+                fill
+                priority
+                className="object-contain object-bottom drop-shadow-[0_20px_50px_rgba(0,0,0,0.45)]"
+                sizes="(max-width: 768px) 300px, 460px"
+              />
+            </div>
+            <div className="portrait-blend" />
           </div>
         </motion.div>
 

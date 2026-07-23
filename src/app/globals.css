@@ -50,18 +50,33 @@ body {
     0 0 80px rgba(225, 29, 46, 0.25);
 }
 
+/* Soft dissolve of cutout into the burgundy hero */
 .portrait-mask {
   mask-image: linear-gradient(
     to bottom,
-    black 0%,
-    black 70%,
+    #000 0%,
+    #000 62%,
+    rgba(0, 0, 0, 0.65) 78%,
     transparent 100%
   );
   -webkit-mask-image: linear-gradient(
     to bottom,
-    black 0%,
-    black 70%,
+    #000 0%,
+    #000 62%,
+    rgba(0, 0, 0, 0.65) 78%,
     transparent 100%
+  );
+}
+
+.portrait-blend {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    to bottom,
+    transparent 45%,
+    rgba(26, 8, 10, 0.35) 72%,
+    #0c0505 100%
   );
 }
 

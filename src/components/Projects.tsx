@@ -4,18 +4,25 @@ import { motion } from "framer-motion";
 
 const projects = [
   {
+    name: "FamilyCall",
+    url: "https://familycall.care",
+    tag: "Founding engineer · Quality",
+    description:
+      "AI voice platform for family caregiving. I set up the test automation framework and CI quality gates, covered APIs and audio pipelines in Python, and built a custom LLM evaluation agent that runs before every release.",
+  },
+  {
     name: "Prince Raymond",
     url: "https://princeraymond.com",
-    tag: "Web · Family business",
+    tag: "Side project · Web",
     description:
-      "Made-to-order Raymond suiting site for a Mumbai tailor shop — custom suits, fabric samples, and enquire flows.",
+      "A made-to-order Raymond suiting site I built for fun — custom suits, fabric samples, and enquire flows.",
   },
   {
     name: "Daily Dish",
     url: "https://dailydish.food",
-    tag: "Product · Supabase + Gemini",
+    tag: "Side project · Supabase + Gemini",
     description:
-      "Weekly meal planner that turns preferences into a ready plan in seconds — built with Supabase and Gemini.",
+      "A weekly meal planner I built for fun — preferences in, plan out, powered by Supabase and Gemini.",
     github: "https://github.com/nidhithakkar/daily-dish-food",
   },
 ];
@@ -34,11 +41,11 @@ export default function Projects() {
             Projects
           </p>
           <h2 className="font-display mt-3 max-w-xl text-3xl font-bold tracking-tight text-white sm:text-4xl md:text-5xl">
-            Work I&apos;ve shipped.
+            What I&apos;ve been building.
           </h2>
           <p className="mt-4 max-w-lg text-muted">
-            A couple of live products — visit them, poke around, tell me what
-            you think.
+            Founding work at FamilyCall, plus a few side projects I built for
+            fun.
           </p>
         </motion.div>
 
