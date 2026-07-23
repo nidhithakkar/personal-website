@@ -18,6 +18,10 @@ export const metadata: Metadata = {
   title: "Nidhi Thakkar — Builder & Engineer",
   description:
     "Personal portfolio of Nidhi Thakkar — builder and engineer shipping reliable digital products.",
+  icons: {
+    icon: [{ url: "/icon", type: "image/png" }],
+    apple: [{ url: "/apple-icon", type: "image/png" }],
+  },
   openGraph: {
     title: "Nidhi Thakkar — Builder & Engineer",
     description:
